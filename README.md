@@ -152,7 +152,8 @@ en faisant varier les paramètres de `gen_csp`.
 
 *complexité temporelle*
 
-![ok](graphiques/temps_cspNreine0.png "Titre de l'image").
+![](graphiques/temps_cspNreine0.png).
+![](graphiques\nreines\CspNreines0.png).
 
 *Nombre de test d'assination cohérente*
 
