@@ -1,3 +1,5 @@
+#__author__      = "AG"
+
 from .utilsFonctions import revise
 import copy
 
