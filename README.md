@@ -142,7 +142,66 @@ Utilisation de la fonction `revise` afin de mettre à jour le domaine de défini
 
 ### Méthode de calcul des performances
 
+Pour le calcul des performances nous étudierons 
+- le temps d'execution
+- le nombre de tests pour l'assignation partielle consistente
+- le nombre de backtrack
+en faisant varier les paramètres de `gen_csp`.
 
+#### Cas particulier des N-reines
+
+*complexité temporelle*
+![Texte alternatif](/chemin/access/image.jpg "Titre de l'image").
+*Nombre de test d'assination cohérente*
+
+*Nombre de backtrack*
+
+
+**Remarque**:
+
+#### En fonction de la taille 
+
+*complexité temporelle*
+
+*Nombre de test d'assination cohérente*
+
+*Nombre de backtrack*
+
+
+**Remarque**:
+
+#### En fonction du nombre de variable
+
+*complexité temporelle*
+
+*Nombre de test d'assination cohérente*
+
+*Nombre de backtrack*
+
+
+**Remarque**:
+
+#### En fonction de la densité
+
+*complexité temporelle*
+
+*Nombre de test d'assination cohérente*
+
+*Nombre de backtrack*
+
+
+**Remarque**:
+
+#### En fonction de la dureté
+
+*complexité temporelle*
+
+*Nombre de test d'assination cohérente*
+
+*Nombre de backtrack*
+
+
+**Remarque**:
 
 ### Exécutables
 
