@@ -271,6 +271,11 @@ En agissant sur la dureté sur des csp de petites tailles, le FC, suivi du backj
 On peut aussi noter un pic de valeur lorsque la dureté est égale à 0.7
 
 ---
+### Conclusion
+
+La complexité de résolution des CSP dépend de plusiieurs de ses paramètres et de certaines relations liant ces derniers.
+Contre toutes intuition, on a pu remarqué qu'il y'avait des extremum de valeurs lorsque certains paramètres du CSP prenait certaine valeurs particulières.
+Commme hypothèse, ces valeurs particulières seraient liées aux autres paramètres et l'etude de ces corrélations pourraient permettre d'optimiser la complexité de résolution des CSP pour certains problèmes.
 
 ### Exécutables
 
