@@ -156,7 +156,7 @@ en faisant varier les paramètres de `gen_csp`.
 
 ![logaritmique](graphiques/nreines/CspNreines0.png).
 
-*Nombre de test d'assination cohérente*
+*Nombre de test d'assignation cohérente*
 
 ![cardinal](graphiques/temps_cspNreines1.png).
 
@@ -179,7 +179,7 @@ en faisant varier les paramètres de `gen_csp`.
 
 ![logarithmique](graphiques/taille/RandomCsp00.png).
 
-*Nombre de test d'assassinat cohérente*
+*Nombre de test d'assignation cohérente*
 
 ![logarithmique](graphiques/taille/RandomCsp1.png).
 
@@ -196,7 +196,7 @@ en faisant varier les paramètres de `gen_csp`.
 
 ![logarithmique](graphiques/nb_var/RandomCsp00.png).
 
-*Nombre de test d'assassinat cohérente*
+*Nombre de test d'assignation cohérente*
 
 ![logarithmique](graphiques/nb_var/RandomCsp1.png).
 
@@ -213,7 +213,7 @@ en faisant varier les paramètres de `gen_csp`.
 
 ![logarithmique](graphiques/densite/RandomCsp00.png).
 
-*Nombre de test d'assassinat cohérente*
+*Nombre de test d'assignation cohérente*
 
 ![logarithmique](graphiques/densite/RandomCsp1.png).
 
@@ -230,7 +230,7 @@ en faisant varier les paramètres de `gen_csp`.
 
 ![logarithmique](graphiques/durete/RandomCsp00.png).
 
-*Nombre de test d'assassinat cohérente*
+*Nombre de test d'assignation cohérente*
 
 ![logarithmique](graphiques/durete/RandomCsp1.png).
 
