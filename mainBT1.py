@@ -1,4 +1,5 @@
 #test BT sur csp n-reines
+
 from sample.generateur.n_reines import csp_N_reine
 from sample.traitement.backtracking import backtracking
 import time
