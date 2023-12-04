@@ -1,3 +1,4 @@
+#test FC sur csp n-reines
 from sample.generateur.n_reines import csp_N_reine
 from sample.traitement.forward_checking import fd_checking
 import time
