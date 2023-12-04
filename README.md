@@ -146,7 +146,7 @@ Pour le calcul des performances nous étudierons
 - le temps d'execution
 - le nombre de tests pour l'assignation partielle consistente
 - le nombre de backtrack
-en faisant varier les paramètres de `gen_csp`.
+en faisant varier les paramètres de `gen_csp`. Par défaut on aura le CSP gen("graphe csp{i}", 8 , 8, 0.7,0.2 ) et lors des tests, on ne fera que varier les valeurs du paramètre concerné.
 
 #### Cas particulier des N-reines
 
@@ -170,9 +170,10 @@ en faisant varier les paramètres de `gen_csp`.
 
 **Remarque**:
 
-Les performances du backtraking et du backjumping sont similaires au niveau du nombre de test sur les assigantion cohérente: Cela est du en parti à la structure dense du csp N-reines.
+Les performances du backtraking et du backjumping sont similaires au niveau du nombre de tests sur les assigantions cohérentes: Cela est du en parti à la structure dense du csp N-reines.
 
 Le forward checking offre des meilleurs performances tant sur la complexité temporelle que sur le nombre de backtrack et de test de consistance. L'algorithme de filtrage intégré, permet de réduire l’espace de recherche.
+
 
 ---
 #### CSP aléatoire : En fonction de la taille 
@@ -193,6 +194,15 @@ Le forward checking offre des meilleurs performances tant sur la complexité tem
 
 **Remarque**:
 
+Pour les 3 algorithmes, on remarque un pic lorsque la taille du domaine `nb_valeur` est égale à 8.
+Le forward cheking effectue moins d'opération de test de cohérence et de backtrack comme on pouvait l'espérer.
+
+Pour les performances temporelles, de [4;7]  du forward est meilleur à celui du backjumping, et moins bon que celui du backtraking.
+De [7;10] Les performances temprelles du forward checking décline.
+De [10;12] La complexité du FC s'améliore progressivement face aux 2 autres algorithmes.
+
+Le backtracking est le moins bon candidat pour des csp avec des taille de domaines élevées.
+
 ---
 #### CSP aléatoire : En fonction du nombre de variable
 
@@ -210,7 +220,11 @@ Le forward checking offre des meilleurs performances tant sur la complexité tem
 
 **Remarque**:
 
+D'après la courbe logarithmique, les performances du FC est meilleur et BJ se rapproche de ses performances.
+
+Le backtracking est le moins bon candidat pour des csp avec plusieurs variables.
 ---
+
 #### CSP aléatoire : En fonction de la densité
 
 ![cardinal](graphiques/densite/RandomCsp01.png).
@@ -227,7 +241,13 @@ Le forward checking offre des meilleurs performances tant sur la complexité tem
 
 **Remarque**:
 
+Le FC présente de loin les meilleures performances suivi du backjumping.
+En agissant sur la densité sur des csp de petites tailles, le backtraking fait à peu près jeu égale avec le backjumping.
+
+On peut aussi noter un pic de valeur lorsque la densité est égale à 0.5
+
 ---
+
 #### CSP aléatoire : En fonction de la dureté
 
 ![cardinal](graphiques/durete/RandomCsp01.png).
@@ -244,6 +264,13 @@ Le forward checking offre des meilleurs performances tant sur la complexité tem
 
 
 **Remarque**:
+
+Le backjumping présente globalement les meilleures performances temporelles sur des petits csp.
+En agissant sur la dureté sur des csp de petites tailles, le FC, suivi du backjumping, parait le plus stable  en terme de nombre de tests et de backtrack.
+
+On peut aussi noter un pic de valeur lorsque la dureté est égale à 0.7
+
+---
 
 ### Exécutables
 
