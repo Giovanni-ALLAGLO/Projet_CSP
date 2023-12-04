@@ -1,3 +1,4 @@
+# test BJ sur csp n-reines
 from sample.generateur.n_reines import csp_N_reine
 from sample.traitement.backjumping import backjumping
 from sample.traitement.utilsFonctions import find_parents
