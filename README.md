@@ -287,7 +287,7 @@ Concernant les tests :
 
 Pour chaque algorithme (BT,BJ et FC) 2 versions: 
 
-- une avec des csp aléatoires (mainFC2.exe,mainBJ2.exe, mainBT2.exe) 
-- une avec les problèmes des n-reines (mainFC1.exe,mainBJ1.exe, mainBT1.exe) 
+- une avec des csp aléatoires (*mainFC2.exe,mainBJ2.exe, mainBT2.exe*) 
+- une avec les problèmes des n-reines (*mainFC1.exe,mainBJ1.exe, mainBT1.exe*) 
 
 **Résultats des exécutables :**\ Un fichier .txt contenant les différentes solutions et temps d'exécution. 
