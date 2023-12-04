@@ -1,6 +1,8 @@
 from .utilsFonctions import consistent_assignment
 import copy
 
+#__author__      = "AG"
+
 def backjumping(csp,parents):
     '''Summary : Determine si le csp est Satisfiable ou non
 
