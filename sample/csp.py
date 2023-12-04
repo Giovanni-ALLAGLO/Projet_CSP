@@ -1,3 +1,5 @@
+#__author__      = "AG"
+
 class Contrainte:
     """Summary : Classe définissant les contraintes d'une CSP.
 
