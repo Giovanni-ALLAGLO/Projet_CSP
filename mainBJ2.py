@@ -1,3 +1,4 @@
+# test BJ sur csp random csp
 from sample.generateur.genRandom_csp import gen_csp
 from sample.traitement.backjumping import backjumping
 from sample.traitement.utilsFonctions import find_parents
