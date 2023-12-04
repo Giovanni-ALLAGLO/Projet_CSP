@@ -4,6 +4,7 @@ from ..csp import Csp
 def gen_csp(name , taille:int, nb_var:int , dur_constr, dense ):
     """Summary : Generation aléatoire de CSP (1 <= variable <= taille) .
 
+    
        Arguments
        ---------
        name :
