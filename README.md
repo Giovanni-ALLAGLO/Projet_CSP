@@ -190,7 +190,7 @@ en faisant varier les paramètres de `gen_csp`. Par défaut on aura le CSP `gen(
 
 **Remarque**:
 
-Les performances du backtraking et du backjumping sont similaires au niveau du nombre de tests sur les assigantions cohérentes: Cela est du en parti à la structure dense du csp N-reines.
+Les performances du backtraking et du backjumping sont similaires au niveau du nombre de tests sur les assignations cohérentes: Cela est du en parti à la structure dense du csp N-reines.
 
 Le forward checking offre des meilleurs performances tant sur la complexité temporelle que sur le nombre de backtrack et de test de consistance. L'algorithme de filtrage intégré, permet de réduire l’espace de recherche.
 
