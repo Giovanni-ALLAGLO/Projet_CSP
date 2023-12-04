@@ -174,65 +174,66 @@ en faisant varier les paramètres de `gen_csp`.
 
 *complexité temporelle*
 
-![cardinal](graphiques\taille\RandomCsp01.png).
+![cardinal](graphiques/taille/RandomCsp01.png).
 
-![logaritmique](graphiques\taille\RandomCsp00.png).
+![logarithmique](graphiques/taille/RandomCsp00.png).
 
-*Nombre de test d'assination cohérente*
+*Nombre de test d'assassinat cohérente*
 
-![logaritmique](graphiques\taille\RandomCsp1.png).
+![logarithmique](graphiques/taille/RandomCsp1.png).
 
 *Nombre de backtrack*
 
-![logaritmique](graphiques\taille\RandomCsp2.png).
+![logarithmique](graphiques/taille/RandomCsp2.png).
 
 **Remarque**:
 
 #### CSP aléatoire : En fonction du nombre de variable
 
-![cardinal](graphiques\nb_var\RandomCsp01.png).
+![cardinal](graphiques/nb_var/RandomCsp01.png).
 
-![logaritmique](graphiques\nb_var\RandomCsp00.png).
+![logarithmique](graphiques/nb_var/RandomCsp00.png).
 
-*Nombre de test d'assination cohérente*
+*Nombre de test d'assassinat cohérente*
 
-![logaritmique](graphiques\nb_var\RandomCsp1.png).
+![logarithmique](graphiques/nb_var/RandomCsp1.png).
 
 *Nombre de backtrack*
 
-![logaritmique](graphiques\nb_var\RandomCsp2.png).
+![logarithmique](graphiques/nb_var/RandomCsp2.png).
 
 **Remarque**:
 
 #### CSP aléatoire : En fonction de la densité
 
-![cardinal](graphiques\densite\RandomCsp01.png).
+![cardinal](graphiques/densite/RandomCsp01.png).
 
-![logarithmique](graphiques\densite\RandomCsp00.png).
+![logarithmique](graphiques/densite/RandomCsp00.png).
 
-*Nombre de test d'assassinat cohérent*
+*Nombre de test d'assassinat cohérente*
 
-![logarithmique](graphiques\densite\RandomCsp1.png).
+![logarithmique](graphiques/densite/RandomCsp1.png).
 
 *Nombre de backtracks*
 
-![logarithmique](graphiques\densite\RandomCsp2.png).
+![logarithmique](graphiques/densite/RandomCsp2.png).
 
 **Remarque**:
 
 #### CSP aléatoire : En fonction de la dureté
 
-![cardinal](graphiques\durete\RandomCsp01.png).
+![cardinal](graphiques/durete/RandomCsp01.png).
 
-![logarithmique](graphiques\durete\RandomCsp00.png).
+![logarithmique](graphiques/durete/RandomCsp00.png).
 
-*Nombre de test d'assassinat cohérent*
+*Nombre de test d'assassinat cohérente*
 
-![logarithmique](graphiques\durete\RandomCsp1.png).
+![logarithmique](graphiques/durete/RandomCsp1.png).
 
 *Nombre de backtracks*
 
-![logarithmique](graphiques\durete\RandomCsp2.png).
+![logarithmique](graphiques/durete/RandomCsp2.png).
+
 
 **Remarque**:
 
