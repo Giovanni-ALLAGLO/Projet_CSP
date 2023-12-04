@@ -4,7 +4,27 @@
 
 ## Table des matières
 
-
+1. [Contexte](#contexte)
+   - 1.1 [Sujet et objectifs](#sujet-et-objectifs)
+   - 1.2 [Format du rendu](#format-du-rendu)
+2. [Programme](#programme)
+   - 2.1 [Modélisation du problème](#modélisation-du-problème)
+   - 2.2 [Generation des CSP](#generation-des-csp)
+      - 2.2.1 [CSP aléatoire](#csp-aléatoire)
+      - 2.2.2 [CSP n-reines](#csp-n-reines)
+   - 2.3 [Traitement](#traitement)
+      - 2.3.1 [Assignations](#assignations)
+      - 2.3.2 [Backtracking chronologique: BT](#backtracking-chronologique-bt)
+      - 2.3.3 [Graph Based Backjumping: BJ](#graph-based-backjumping-bj)
+      - 2.3.4 [Forward-Checking: FC](#forward-checking-fc)
+   - 2.4 [Méthode de calcul des performances](#méthode-de-calcul-des-performances)
+      - 2.4.1 [Cas particulier des N-reines](#cas-particulier-des-n-reines)
+      - 2.4.2 [CSP aléatoire: En fonction de la taille](#csp-aléatoire-en-fonction-de-la-taille)
+      - 2.4.3 [CSP aléatoire: En fonction du nombre de variables](#csp-aléatoire-en-fonction-du-nombre-de-variables)
+      - 2.4.4 [CSP aléatoire: En fonction de la densité](#csp-aléatoire-en-fonction-de-la-densité)
+      - 2.4.5 [CSP aléatoire: En fonction de la dureté](#csp-aléatoire-en-fonction-de-la-dureté)
+3. [Conclusion](#conclusion)
+4. [Exécutables](#exécutables)
 
 ---
 
