@@ -127,7 +127,7 @@ La fonction génère des contraintes pour le problème des N-reines. Elle itère
 
 Dans les algorithmes de recherche de solution, une assignation (partielle ou totale) sera représentée par une liste $[a_1, a_2, \dots, a_n]$ pour un problème à $n$ variables, dans laquelle $a_i$ représente la valeur assignée à la variable $i$ le cas échéant, et `None` sinon.
 
-#### Backtracking chronologique : BT** 
+#### Backtracking chronologique : BT 
 
 Implémentation de l’algorithme sur 2 versions : 
 
