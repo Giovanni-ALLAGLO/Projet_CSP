@@ -1,3 +1,4 @@
+# test FC sur random csp
 from sample.generateur.genRandom_csp import gen_csp
 from sample.traitement.forward_checking import fd_checking
 import time
