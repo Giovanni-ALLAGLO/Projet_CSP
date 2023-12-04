@@ -1,3 +1,4 @@
+#test BT sur random csp
 from sample.generateur.genRandom_csp import gen_csp
 from sample.traitement.backtracking import backtracking
 import time
