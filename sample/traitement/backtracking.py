@@ -1,6 +1,6 @@
+#__author__      = "AG"
 from .utilsFonctions import consistent_assignment
 
-#__author__      = "AG"
 
 def backtracking(csp):
     """Summary : Determine si le csp est Satisfiable ou non.
