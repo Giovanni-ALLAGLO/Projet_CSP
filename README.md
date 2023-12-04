@@ -151,7 +151,9 @@ en faisant varier les paramètres de `gen_csp`.
 #### Cas particulier des N-reines
 
 *complexité temporelle*
-![](graphiques/temps_cspNreine0.png "Titre de l'image").
+
+![ok](graphiques/temps_cspNreine0.png "Titre de l'image").
+
 *Nombre de test d'assination cohérente*
 
 *Nombre de backtrack*
