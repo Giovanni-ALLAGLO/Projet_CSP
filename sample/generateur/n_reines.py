@@ -1,7 +1,9 @@
 from ..csp import Csp
 
-def csp_N_reine(N):
-    """Summary : Generateur de CSP pour le probleme des N-reines."""
+def csp_N_reine(N)->Csp:
+    """
+    Summary : Generateur de CSP pour le probleme des N-reines.
+    """
     modele = Csp(f"{N}-reines" , N, N)
     for var in range (1,N+1):
         #taille des domaines fixé > ensemble domaine > ajout de variable au csp
