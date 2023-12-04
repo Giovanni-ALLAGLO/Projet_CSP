@@ -221,7 +221,6 @@ Le backtracking est le moins bon candidat pour des csp avec des taille de domain
 **Remarque**:
 
 D'après la courbe logarithmique, les performances du FC est meilleur et BJ se rapproche de ses performances.
-
 Le backtracking est le moins bon candidat pour des csp avec plusieurs variables.
 ---
 
