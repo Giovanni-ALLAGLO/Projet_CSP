@@ -127,7 +127,7 @@ La fonction génère des contraintes pour le problème des N-reines. Elle itère
 
 Dans les algorithmes de recherche de solution, une assignation (partielle ou totale) sera représentée par une liste $[a_1, a_2, \dots, a_n]$ pour un problème à $n$ variables, dans laquelle $a_i$ représente la valeur assignée à la variable $i$ le cas échéant, et `None` sinon.
 
-#### Backtracking chronologique : BT 
+#### Backtracking chronologique BT 
 
 Implémentation de l’algorithme sur 2 versions : 
 
@@ -137,7 +137,7 @@ Implémentation de l’algorithme sur 2 versions :
 Utilisation de la fonction  `consistent_assignment` pour vérifier si une assignation est cohérente. 
 
 
-#### Graph Based Backjumping : BJ
+#### Graph Based Backjumping BJ
 
 Implémentation de l’algorithme sur 2 versions : 
 
@@ -149,7 +149,7 @@ Utilisation de la fonction  `consistent_assignment` pour vérifier si une assign
 Utilisation de la fonction `find_parents` pour trouver les parents de chaque nœud. 
 
 
-#### Forward-Checking : FC
+#### Forward-Checking FC
 
 Implémentation de l’algorithme sur 2 versions : 
 
@@ -196,7 +196,7 @@ Le forward checking offre des meilleurs performances tant sur la complexité tem
 
 
 ---
-#### CSP aléatoire : En fonction de la taille 
+#### CSP aléatoire En fonction de la taille 
 
 *complexité temporelle*
 
@@ -224,7 +224,7 @@ De [10;12] La complexité du FC s'améliore progressivement face aux 2 autres al
 Le backtracking est le moins bon candidat pour des csp avec des taille de domaines élevées.
 
 ---
-#### CSP aléatoire : En fonction du nombre de variable
+#### CSP aléatoire En fonction du nombre de variable
 
 ![cardinal](graphiques/nb_var/RandomCsp01.png).
 
@@ -245,7 +245,7 @@ Le backtracking est le moins bon candidat pour des csp avec plusieurs variables.
 
 ---
 
-#### CSP aléatoire : En fonction de la densité
+#### CSP aléatoire En fonction de la densité
 
 ![cardinal](graphiques/densite/RandomCsp01.png).
 
@@ -268,7 +268,7 @@ On peut aussi noter un pic de valeur lorsque la densité est égale à 0.5
 
 ---
 
-#### CSP aléatoire : En fonction de la dureté
+#### CSP aléatoire En fonction de la dureté
 
 ![cardinal](graphiques/durete/RandomCsp01.png).
 
