@@ -152,60 +152,87 @@ en faisant varier les paramètres de `gen_csp`.
 
 *complexité temporelle*
 
-<p align="center">
-  <img src="graphiques/temps_cspNreine0.png" alt="Texte alternatif pour image 1" style="display: inline-block;">
-  <img src="graphiques\nreines\CspNreines0.png" alt="Texte alternatif pour image 2" style="display: inline-block;">
-</p>
+![cardinal](graphiques/temps_cspNreine0.png).
 
+![logaritmique](graphiques\nreines\CspNreines0.png).
 
 *Nombre de test d'assination cohérente*
 
+![cardinal](graphiques/temps_cspNreine1.png).
+
+![logaritmique](graphiques\nreines\CspNreines1.png).
+
 *Nombre de backtrack*
 
+![cardinal](graphiques/temps_cspNreine2.png).
+
+![logaritmique](graphiques\nreines\CspNreines2.png).
 
 **Remarque**:
 
-#### En fonction de la taille 
+#### CSP aléatoire : En fonction de la taille 
 
 *complexité temporelle*
 
+![cardinal](graphiques\taille\RandomCsp01.png).
+
+![logaritmique](graphiques\taille\RandomCsp00.png).
+
 *Nombre de test d'assination cohérente*
+
+![logaritmique](graphiques\taille\RandomCsp1.png).
 
 *Nombre de backtrack*
 
+![logaritmique](graphiques\taille\RandomCsp2.png).
 
 **Remarque**:
 
-#### En fonction du nombre de variable
+#### CSP aléatoire : En fonction du nombre de variable
 
-*complexité temporelle*
+![cardinal](graphiques\nb_var\RandomCsp01.png).
+
+![logaritmique](graphiques\nb_var\RandomCsp00.png).
 
 *Nombre de test d'assination cohérente*
 
+![logaritmique](graphiques\nb_var\RandomCsp1.png).
+
 *Nombre de backtrack*
 
+![logaritmique](graphiques\nb_var\RandomCsp2.png).
 
 **Remarque**:
 
-#### En fonction de la densité
+#### CSP aléatoire : En fonction de la densité
 
-*complexité temporelle*
+![cardinal](graphiques\densite\RandomCsp01.png).
 
-*Nombre de test d'assination cohérente*
+![logarithmique](graphiques\densite\RandomCsp00.png).
 
-*Nombre de backtrack*
+*Nombre de test d'assassinat cohérent*
 
+![logarithmique](graphiques\densite\RandomCsp1.png).
+
+*Nombre de backtracks*
+
+![logarithmique](graphiques\densite\RandomCsp2.png).
 
 **Remarque**:
 
-#### En fonction de la dureté
+#### CSP aléatoire : En fonction de la dureté
 
-*complexité temporelle*
+![cardinal](graphiques\durete\RandomCsp01.png).
 
-*Nombre de test d'assination cohérente*
+![logarithmique](graphiques\durete\RandomCsp00.png).
 
-*Nombre de backtrack*
+*Nombre de test d'assassinat cohérent*
 
+![logarithmique](graphiques\durete\RandomCsp1.png).
+
+*Nombre de backtracks*
+
+![logarithmique](graphiques\durete\RandomCsp2.png).
 
 **Remarque**:
 
