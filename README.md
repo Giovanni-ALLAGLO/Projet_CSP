@@ -170,6 +170,7 @@ en faisant varier les paramètres de `gen_csp`.
 
 **Remarque**:
 
+---
 #### CSP aléatoire : En fonction de la taille 
 
 *complexité temporelle*
@@ -188,6 +189,7 @@ en faisant varier les paramètres de `gen_csp`.
 
 **Remarque**:
 
+---
 #### CSP aléatoire : En fonction du nombre de variable
 
 ![cardinal](graphiques/nb_var/RandomCsp01.png).
@@ -204,6 +206,7 @@ en faisant varier les paramètres de `gen_csp`.
 
 **Remarque**:
 
+---
 #### CSP aléatoire : En fonction de la densité
 
 ![cardinal](graphiques/densite/RandomCsp01.png).
@@ -220,6 +223,7 @@ en faisant varier les paramètres de `gen_csp`.
 
 **Remarque**:
 
+---
 #### CSP aléatoire : En fonction de la dureté
 
 ![cardinal](graphiques/durete/RandomCsp01.png).
