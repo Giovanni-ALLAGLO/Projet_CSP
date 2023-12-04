@@ -1,3 +1,5 @@
+#fonctions utilitaires
+
 def affich_csp(csp):
     """Summary : Fonction d'affichage de CSP ."""
     print(f"Cette struture de donnée est une csp \nNom : {csp.name} \nNombre de variables : {csp.nb_var} \nTaille des domaines : {csp.nb_valeur} \nDensité : {csp.densite} \nDureté des contraintes : {csp.durete_contrainte}\n")
