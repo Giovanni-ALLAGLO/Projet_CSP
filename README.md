@@ -152,19 +152,19 @@ en faisant varier les paramètres de `gen_csp`.
 
 *complexité temporelle*
 
-![cardinal](graphiques/temps_cspNreine0.png).
+![cardinal](graphiques/temps_cspNreines0.png).
 
 ![logaritmique](graphiques/nreines/CspNreines0.png).
 
 *Nombre de test d'assination cohérente*
 
-![cardinal](graphiques/temps_cspNreine1.png).
+![cardinal](graphiques/temps_cspNreines1.png).
 
 ![logaritmique](graphiques/nreines/CspNreines1.png).
 
 *Nombre de backtrack*
 
-![cardinal](graphiques/temps_cspNreine2.png).
+![cardinal](graphiques/temps_cspNreines2.png).
 
 ![logaritmique](graphiques/nreines/CspNreines2.png).
 
