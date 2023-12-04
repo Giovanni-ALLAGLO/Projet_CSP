@@ -166,7 +166,7 @@ Pour le calcul des performances nous étudierons
 - le temps d'execution
 - le nombre de tests pour l'assignation partielle consistente
 - le nombre de backtrack
-en faisant varier les paramètres de `gen_csp`. Par défaut on aura le CSP gen("graphe csp{i}", 8 , 8, 0.7,0.2 ) et lors des tests, on ne fera que varier les valeurs du paramètre concerné.
+en faisant varier les paramètres de `gen_csp`. Par défaut on aura le CSP `gen("graphe csp{i}", 8 , 8, 0.7,0.2 )` et lors des tests, on ne fera que varier les valeurs du paramètre concerné.
 
 #### Cas particulier des N-reines
 
