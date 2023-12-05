@@ -214,9 +214,9 @@ Le forward checking offre des meilleurs performances tant sur la complexité tem
 Pour les 3 algorithmes, on remarque un pic lorsque la taille du domaine `nb_valeur` est égale à 8.
 Le forward cheking effectue moins d'opération de test de cohérence et de backtrack comme on pouvait l'espérer.
 
-Pour les performances temporelles, de [4;7]  du forward est meilleur à celui du backjumping, et moins bon que celui du backtraking.
-De [7;10] Les performances temprelles du forward checking décline.
-De [10;12] La complexité du FC s'améliore progressivement face aux 2 autres algorithmes.
+Pour les performances temporelles, de [4;7] celui du forward checking est meilleur à celui du backtraking , et moins bon que celui du backjumping.
+De [7;10] Les performances temprelles du forward checking se stabilise mieux et est de loin le meilleur.
+De [10;12] La complexité du FC décline progressivement face aux 2 autres algorithmes.
 
 Le backtracking est le moins bon candidat pour des csp avec des taille de domaines élevées.
 
