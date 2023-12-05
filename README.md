@@ -122,7 +122,7 @@ Elle génère les contraintes pour le problème des N-reines et itère sur les p
 
 #### Assignations
 
-Dans les algorithmes de recherche de solution, une assignation (partielle ou totale) sera représentée par une liste $[a_1, a_2, \dots, a_n]$ pour un problème à $n$ variables, dans laquelle $a_i$ représente la valeur assignée à la variable $i$ le cas échéant, et `None` sinon.
+Dans les algorithmes de recherche de solution, une assignation (partielle ou totale) sera représentée par une liste $[a_1, a_2, \dots, a_n]$ pour un problème à $n$ variables, dans laquelle $a_i$ représente la valeur assignée à la variable $i$ et cohhérente avec  $[a_1, a_2, \dots, a_i-1]$ .
 
 #### Backtracking chronologique BT 
 
