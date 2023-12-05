@@ -113,12 +113,9 @@ En ce qui concerne la dureté des contraintes, on calcule aussi le nombre de cou
 
 La fonction `csp_N_reine` initialise un modèle CSP nommé *N-reines* avec *N* variables et domaines. Cela représente le problème des N-reines, où chaque variable correspond à une colonne, et le domaine de chaque variable représente les positions de lignes possibles.
 
-
-La fonction itère sur les N colonnes, ajoutant chacune en tant que variable au modèle CSP. Le domaine de chaque variable inclut des valeurs de 1 à N, représentant les positions de lignes possibles pour une reine dans cette colonne.
-
-La fonction génère des contraintes pour le problème des N-reines. Elle itère sur les paires de variables (colonnes) et crée des contraintes basées sur les règles du puzzle des N-reines.
-     - Les reines ne peuvent pas être dans la même ligne .
-     - Les reines ne peuvent pas être sur la même diagonale.
+Elle génère les contraintes pour le problème des N-reines et itère sur les paires de variables (ligne,colonne) pour créer des contraintes basées sur les règles du puzzle des N-reines.
+     * Les reines ne peuvent pas être dans la même ligne .
+     * Les reines ne peuvent pas être sur la même diagonale.
 
 ### Traitement 
 
