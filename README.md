@@ -78,7 +78,7 @@ C = \{C_1, C_2, \dots, C_m\} &\text{: ensemble fini de contraintes}
 \end{cases}
 $$
 
-L’objectif étant de résoudre les problèmes de satisfaction de contraintes (CSP), nous avons de prime abord mis au point une structure  pour formaliser les données du problèmes.  Ainsi,  nous  avons  opté  pour  le  langage  python  qui  nous  permet d’aborder les CSP avec approche orientée objet. 
+L’objectif étant de résoudre les problèmes de satisfaction de contraintes (CSP), nous avons de prime abord mis au point une structure  pour formaliser les données du problème.  Ainsi,  nous  avons  opté  pour  le  langage  python  qui  nous  permet d’aborder les CSP avec approche orientée objet. 
 
 Une  première  classe  nommée  `Csp`  met  en  forme  le  problème. Elle contient les données telles que : 
 
