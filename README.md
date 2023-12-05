@@ -98,7 +98,6 @@ Aussi nous avons les fonctions nécessaires à la construction de la csp : *Fonc
 
 Dans cette partie nous avons deux fonctions géneratrices :
 
-
 *   `gen_csp` générateur aléatoire de csp en fonctions des paramètres que sont le nombre de variables, la taille des domaines, la densité et la dureté des contraintes.
 *   `csp_N_reine` générateur d'un csp pour le problème des N-reines.
 
@@ -114,8 +113,9 @@ En ce qui concerne la dureté des contraintes, on calcule aussi le nombre de cou
 La fonction `csp_N_reine` initialise un modèle CSP nommé *N-reines* avec *N* variables et domaines. Cela représente le problème des N-reines, où chaque variable correspond à une colonne, et le domaine de chaque variable représente les positions de lignes possibles.
 
 Elle génère les contraintes pour le problème des N-reines et itère sur les paires de variables (ligne,colonne) pour créer des contraintes basées sur les règles du puzzle des N-reines.
-     * Les reines ne peuvent pas être dans la même ligne .
-     * Les reines ne peuvent pas être sur la même diagonale.
+
+*   Les reines ne peuvent pas être dans la même ligne .
+*   Les reines ne peuvent pas être sur la même diagonale.
 
 ### Traitement 
 
