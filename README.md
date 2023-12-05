@@ -4,7 +4,27 @@
 
 ## Table des matières
 
-
+1. [Contexte](#contexte)
+   1. [Sujet et objectifs](#sujet-et-objectifs)
+   2. [Format du rendu](#format-du-rendu)
+2. [Programme](#programme)
+   1. [Modélisation du problème](#modélisation-du-problème)
+   2. [Generation des CSP](#generation-des-csp)
+      1. [CSP aléatoire](#csp-aléatoire)
+      2. [CSP n-reines](#csp-n-reines)
+   3. [Traitement](#traitement)
+      1. [Assignations](#assignations)
+      2. [Backtracking chronologique: BT](#backtracking-chronologique-bt)
+      3. [Graph Based Backjumping: BJ](#graph-based-backjumping-bj)
+      4. [Forward-Checking: FC](#forward-checking-fc)
+   4. [Méthode de calcul des performances](#méthode-de-calcul-des-performances)
+      1. [Cas particulier des N-reines](#cas-particulier-des-n-reines)
+      2. [CSP aléatoire: En fonction de la taille](#csp-aléatoire-en-fonction-de-la-taille)
+      3. [CSP aléatoire: En fonction du nombre de variables](#csp-aléatoire-en-fonction-du-nombre-de-variables)
+      4. [CSP aléatoire: En fonction de la densité](#csp-aléatoire-en-fonction-de-la-densité)
+      5. [CSP aléatoire: En fonction de la dureté](#csp-aléatoire-en-fonction-de-la-dureté)
+3. [Conclusion](#conclusion)
+4. [Exécutables](#exécutables)
 
 ---
 
@@ -58,7 +78,7 @@ C = \{C_1, C_2, \dots, C_m\} &\text{: ensemble fini de contraintes}
 \end{cases}
 $$
 
-L’objectif étant de résoudre les problèmes de satisfaction de contraintes (CSP), nous avons de prime abord mis au point une structure  pour formaliser les données du problèmes.  Ainsi,  nous  avons  opté  pour  le  langage  python  qui  nous  permet d’aborder les CSP avec approche orientée objet. 
+L’objectif étant de résoudre les problèmes de satisfaction de contraintes (CSP), nous avons de prime abord mis au point une structure  pour formaliser les données du problème.  Ainsi,  nous  avons  opté  pour  le  langage  python  qui  nous  permet d’aborder les CSP avec approche orientée objet. 
 
 Une  première  classe  nommée  `Csp`  met  en  forme  le  problème. Elle contient les données telles que : 
 
@@ -78,7 +98,6 @@ Aussi nous avons les fonctions nécessaires à la construction de la csp : *Fonc
 
 Dans cette partie nous avons deux fonctions géneratrices :
 
-
 *   `gen_csp` générateur aléatoire de csp en fonctions des paramètres que sont le nombre de variables, la taille des domaines, la densité et la dureté des contraintes.
 *   `csp_N_reine` générateur d'un csp pour le problème des N-reines.
 
@@ -93,21 +112,19 @@ En ce qui concerne la dureté des contraintes, on calcule aussi le nombre de cou
 
 La fonction `csp_N_reine` initialise un modèle CSP nommé *N-reines* avec *N* variables et domaines. Cela représente le problème des N-reines, où chaque variable correspond à une colonne, et le domaine de chaque variable représente les positions de lignes possibles.
 
+Elle génère les contraintes pour le problème des N-reines et itère sur les paires de variables (ligne,colonne) pour créer des contraintes basées sur les règles du puzzle des N-reines.
 
-La fonction itère sur les N colonnes, ajoutant chacune en tant que variable au modèle CSP. Le domaine de chaque variable inclut des valeurs de 1 à N, représentant les positions de lignes possibles pour une reine dans cette colonne.
-
-La fonction génère des contraintes pour le problème des N-reines. Elle itère sur les paires de variables (colonnes) et crée des contraintes basées sur les règles du puzzle des N-reines.
-     - Les reines ne peuvent pas être dans la même ligne .
-     - Les reines ne peuvent pas être sur la même diagonale.
+*   Les reines ne peuvent pas être dans la même ligne .
+*   Les reines ne peuvent pas être sur la même diagonale.
 
 ### Traitement 
 
 
 #### Assignations
 
-Dans les algorithmes de recherche de solution, une assignation (partielle ou totale) sera représentée par une liste $[a_1, a_2, \dots, a_n]$ pour un problème à $n$ variables, dans laquelle $a_i$ représente la valeur assignée à la variable $i$ le cas échéant, et `None` sinon.
+Dans les algorithmes de recherche de solution, une assignation (partielle ou totale) sera représentée par une liste $[a_1, a_2, \dots, a_n]$ pour un problème à $n$ variables, dans laquelle $a_i$ représente la valeur assignée à la variable $i$ et cohhérente avec  $[a_1, a_2, \dots, a_i-1]$ . Initialement la liste est vide et donc la première valeur doit juste être cohérente par rapport à la première variable auquelle elle est assignée.
 
-#### Backtracking chronologique : BT** 
+#### Backtracking chronologique BT 
 
 Implémentation de l’algorithme sur 2 versions : 
 
@@ -117,7 +134,7 @@ Implémentation de l’algorithme sur 2 versions :
 Utilisation de la fonction  `consistent_assignment` pour vérifier si une assignation est cohérente. 
 
 
-#### Graph Based Backjumping : BJ
+#### Graph Based Backjumping BJ
 
 Implémentation de l’algorithme sur 2 versions : 
 
@@ -129,7 +146,7 @@ Utilisation de la fonction  `consistent_assignment` pour vérifier si une assign
 Utilisation de la fonction `find_parents` pour trouver les parents de chaque nœud. 
 
 
-#### Forward-Checking : FC
+#### Forward-Checking FC
 
 Implémentation de l’algorithme sur 2 versions : 
 
@@ -146,7 +163,7 @@ Pour le calcul des performances nous étudierons
 - le temps d'execution
 - le nombre de tests pour l'assignation partielle consistente
 - le nombre de backtrack
-en faisant varier les paramètres de `gen_csp`.
+en faisant varier les paramètres de `gen_csp`. Par défaut on aura le CSP `gen("graphe csp{i}", 8 , 8, 0.7,0.2 )` et lors des tests, on ne fera que varier les valeurs du paramètre concerné.
 
 #### Cas particulier des N-reines
 
@@ -156,7 +173,7 @@ en faisant varier les paramètres de `gen_csp`.
 
 ![logaritmique](graphiques/nreines/CspNreines0.png).
 
-*Nombre de test d'assination cohérente*
+*Nombre de test d'assignation cohérente*
 
 ![cardinal](graphiques/temps_cspNreines1.png).
 
@@ -170,7 +187,13 @@ en faisant varier les paramètres de `gen_csp`.
 
 **Remarque**:
 
-#### CSP aléatoire : En fonction de la taille 
+Les performances du backtraking et du backjumping sont similaires au niveau du nombre de tests sur les assignations cohérentes: Cela est du en parti à la structure dense du csp N-reines.
+
+Le forward checking offre des meilleurs performances tant sur la complexité temporelle que sur le nombre de backtrack et de test de consistance. L'algorithme de filtrage intégré, permet de réduire l’espace de recherche.
+
+
+---
+#### CSP aléatoire En fonction de la taille 
 
 *complexité temporelle*
 
@@ -178,7 +201,7 @@ en faisant varier les paramètres de `gen_csp`.
 
 ![logarithmique](graphiques/taille/RandomCsp00.png).
 
-*Nombre de test d'assassinat cohérente*
+*Nombre de test d'assignation cohérente*
 
 ![logarithmique](graphiques/taille/RandomCsp1.png).
 
@@ -188,13 +211,23 @@ en faisant varier les paramètres de `gen_csp`.
 
 **Remarque**:
 
-#### CSP aléatoire : En fonction du nombre de variable
+Pour les 3 algorithmes, on remarque un pic lorsque la taille du domaine `nb_valeur` est égale à 8.
+Le forward cheking effectue moins d'opération de test de cohérence et de backtrack comme on pouvait l'espérer.
+
+Pour les performances temporelles, de [4;7] celui du forward checking est meilleur à celui du backtraking , et moins bon que celui du backjumping.
+De [7;10] Les performances temprelles du forward checking se stabilise mieux et est de loin le meilleur.
+De [10;12] La complexité du FC décline progressivement face aux 2 autres algorithmes.
+
+Le backtracking est le moins bon candidat pour des csp avec des taille de domaines élevées.
+
+---
+#### CSP aléatoire En fonction du nombre de variable
 
 ![cardinal](graphiques/nb_var/RandomCsp01.png).
 
 ![logarithmique](graphiques/nb_var/RandomCsp00.png).
 
-*Nombre de test d'assassinat cohérente*
+*Nombre de test d'assignation cohérente*
 
 ![logarithmique](graphiques/nb_var/RandomCsp1.png).
 
@@ -204,13 +237,18 @@ en faisant varier les paramètres de `gen_csp`.
 
 **Remarque**:
 
-#### CSP aléatoire : En fonction de la densité
+D'après la courbe logarithmique, les performances du FC est meilleur et BJ se rapproche de ses performances.
+Le backtracking est le moins bon candidat pour des csp avec plusieurs variables.
+
+---
+
+#### CSP aléatoire En fonction de la densité
 
 ![cardinal](graphiques/densite/RandomCsp01.png).
 
 ![logarithmique](graphiques/densite/RandomCsp00.png).
 
-*Nombre de test d'assassinat cohérente*
+*Nombre de test d'assignation cohérente*
 
 ![logarithmique](graphiques/densite/RandomCsp1.png).
 
@@ -220,13 +258,20 @@ en faisant varier les paramètres de `gen_csp`.
 
 **Remarque**:
 
-#### CSP aléatoire : En fonction de la dureté
+Le FC présente de loin les meilleures performances suivi du backjumping.
+En agissant sur la densité sur des csp de petites tailles, le backtraking fait à peu près jeu égale avec le backjumping.
+
+On peut aussi noter un pic de valeur lorsque la densité est égale à 0.5
+
+---
+
+#### CSP aléatoire En fonction de la dureté
 
 ![cardinal](graphiques/durete/RandomCsp01.png).
 
 ![logarithmique](graphiques/durete/RandomCsp00.png).
 
-*Nombre de test d'assassinat cohérente*
+*Nombre de test d'assignation cohérente*
 
 ![logarithmique](graphiques/durete/RandomCsp1.png).
 
@@ -236,6 +281,18 @@ en faisant varier les paramètres de `gen_csp`.
 
 
 **Remarque**:
+
+Le backjumping présente globalement les meilleures performances temporelles sur des petits csp.
+En agissant sur la dureté sur des csp de petites tailles, le FC, suivi du backjumping, parait le plus stable  en terme de nombre de tests et de backtrack.
+
+On peut aussi noter un pic de valeur lorsque la dureté est égale à 0.7
+
+---
+### Conclusion
+
+La complexité de résolution des CSP dépend de plusiieurs de ses paramètres et de certaines relations liant ces derniers.
+Contre toutes intuition, on a pu remarqué qu'il y'avait des extremum de valeurs lorsque certains paramètres du CSP prenait certaine valeurs particulières.
+Commme hypothèse, ces valeurs particulières seraient liées aux autres paramètres et l'etude de ces corrélations pourraient permettre d'optimiser la complexité de résolution des CSP pour certains problèmes.
 
 ### Exécutables
 
@@ -247,7 +304,7 @@ Concernant les tests :
 
 Pour chaque algorithme (BT,BJ et FC) 2 versions: 
 
-- une avec des csp aléatoires (mainFC2.exe,mainBJ2.exe, mainBT2.exe) 
-- une avec les problèmes des n-reines (mainFC1.exe,mainBJ1.exe, mainBT1.exe) 
+- une avec des csp aléatoires (*mainFC2.exe,mainBJ2.exe, mainBT2.exe*) 
+- une avec les problèmes des n-reines (*mainFC1.exe,mainBJ1.exe, mainBT1.exe*) 
 
 **Résultats des exécutables :**\ Un fichier .txt contenant les différentes solutions et temps d'exécution. 
