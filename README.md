@@ -171,19 +171,13 @@ en faisant varier les paramètres de `gen_csp`. Par défaut on aura le CSP `gen(
 
 ![cardinal](graphiques/temps_cspNreines0.png).
 
-![logaritmique](graphiques/nreines/CspNreines0.png).
-
 *Nombre de test d'assignation cohérente*
 
 ![cardinal](graphiques/temps_cspNreines1.png).
 
-![logaritmique](graphiques/nreines/CspNreines1.png).
-
 *Nombre de backtrack*
 
 ![cardinal](graphiques/temps_cspNreines2.png).
-
-![logaritmique](graphiques/nreines/CspNreines2.png).
 
 **Remarque**:
 
